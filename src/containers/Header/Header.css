@@ -1,0 +1,132 @@
+.header{
+    background-color: transparent;
+    height: 89px;
+    z-index: 3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: transform .3s linear;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+}
+
+
+.hide{
+    transform: translateY(-91px);
+    
+}
+
+
+.scrolledDown{
+    background-color: white;
+    
+}
+.logo{
+    letter-spacing: 0.35em;
+    font-size: 20px;
+    font-weight: 700;
+}
+.headerPosition{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.trafficButtons{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+
+}
+.menu li{
+    text-decoration: none;
+    margin: 20px;
+    list-style: none;
+}
+.menu li a, a{
+    text-decoration: none;
+    color: black;
+}
+.subscribeButton button{
+    width: 142px;
+    height: 32px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+border-radius: 10px;
+margin-right: 50px;
+}
+
+@media (max-width:768px){
+    
+    .headerBurger{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 2;
+        position: absolute;
+        right: 10px;
+        top: 30px;
+        z-index: 51;
+    }
+    .headerBurger span{
+        position: absolute;
+        background-color:burlywood;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+    }
+    .headerBurger::before,
+    .headerBurger::after{
+        content: '';
+        background-color:burlywood;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+    }
+    .headerBurger::before{
+        top: 0;
+    }
+    .headerBurger::after{
+        bottom: 0;
+    }
+    .headerMenu{
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        padding: 70px;
+        transform: translate(+100%);
+        z-index: 50;
+    }
+    .headerMenu ul{
+        display: block;
+    }
+    .headerMenu ul li{
+     margin: 0px 0px 30px 0px;
+    }
+    .headerMenu.active {
+        transform: translate(0);
+    }
+    .subscribeButton{
+        margin-left: 15px;
+    }
+    .subscribeButton button{
+        width: 80px;
+        font-size: 12px;
+    }
+    .header{
+        background-color: white;
+    }
+}

@@ -1,0 +1,161 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.firstPartOfHomePage{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-bottom: 200px;
+}
+.homePageVideo{
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    object-fit: cover;
+    object-position: center center;
+    opacity: 1;
+    z-index: 1;
+}
+.upperVideo{
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 3;
+}
+@media (min-width:1100px){
+.homePageTitle{
+z-index: 2;
+font-weight: 300;
+letter-spacing: 0.15em;
+line-height: 1.5em;
+text-align: center;
+font-size: 64px;
+
+}
+.upperVideo p{
+text-align: center;
+font-weight: 100;
+letter-spacing: 0.05em;
+line-height: 1.8em;
+text-align: center;
+font-size: 24px;
+}
+
+}
+@media (max-width:1100px) {
+    .firstPartOfHomePage{
+    padding-bottom: 100px;
+}
+    .homePageTitle{
+        z-index: 2;
+        font-weight: 300;
+        letter-spacing: 0.15em;
+        line-height: 1.5em;
+        text-align: center;
+        font-size: 48px;
+        
+        }
+        .upperVideo p{
+        text-align: center;
+        font-weight: 100;
+        letter-spacing: 0.05em;
+        line-height: 1.8em;
+        text-align: center;
+        font-size: 18px;
+        }
+        .upperVideo{
+            top: 90px;
+        }
+}
+@media (max-width:768px) {
+    .homePageTitle{
+        z-index: 2;
+        font-weight: 300;
+        letter-spacing: 0.15em;
+        line-height: 1.5em;
+        text-align: center;
+        font-size: 36px;
+        
+        }
+        .upperVideo p{
+        text-align: center;
+        font-weight: 100;
+        letter-spacing: 0.05em;
+        line-height: 1.8em;
+        text-align: center;
+        font-size: 12px;
+        }
+        
+}
+@media (max-width:420px) {
+    .homePageTitle{
+        z-index: 2;
+        font-weight: 300;
+        letter-spacing: 0.15em;
+        line-height: 1.5em;
+        text-align: center;
+        font-size: 28px;
+        
+        }
+        .upperVideo p{
+        text-align: center;
+        font-weight: 100;
+        letter-spacing: 0.05em;
+        line-height: 1.8em;
+        text-align: center;
+        font-size: 10px;
+        }
+        .upperVideo{
+            top:90px
+        }
+}
+.eclipse{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    min-height: 300px;
+
+}
+.secondPartOfHomePage{
+    background-color: black;
+    color: white;
+    
+}
+.secondPartPosition{
+    width: 100%;
+height: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+.leftPart{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title2 p{
+    font-size: 1.35em;
+}
+.content21 p{
+letter-spacing: 0.2em;
+line-height: 1.8em;
+font-size: 28px;
+}
+.content22 p{
+    letter-spacing: .2em;
+    font-size: 18px;
+    line-height: 1.8em;
+}
+.rightPart{
+    width: 60%;
+}
+.rightPart img{
+    width: 100%;
+}
